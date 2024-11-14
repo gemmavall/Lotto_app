@@ -1,32 +1,35 @@
 How to run this code
 
 1. python -m venv .venv
+1b python3 -m venv .venv (for Mac OS)
 
 2..venv\Scripts\activate
+2b source .venv/bin/activate (for Mac OS)
 
 3. pip install -r requirements.txt
 
 
-Open three Terminals and get into .venv for 2 of them using command 2 above
+Open three Terminals and get into .venv for 2 of them using the activate command 2 above.
+Note that: To activate the environment you need to be in the folder of the project in any of the terminal you use. 
+In the two terminals with .venv  go inside their respective folders (linux and dec-key) and run python app.py and python app.py
 
 
-cd front_end slot-machine
+On the 3rd terminal log into the front end:
+cd front_end 
+Cd slot-machine
 npm i or npm install
-
-
-
-In the two terminals with .venv  go inside their respective folders and run python app.py and python app.py
 
 In the front_end run in slot-machine npm run build then npm run start
 
-Please kindly put the public file in the slot-machine folder 
+Please kindly put the public file in the slot-machine folder. 
 
-
-Also make sure you have .env file inside slot-machine with the following contents
+Also make sure you have .env file inside slot-machine with the following contents. Create the .env file inside the slot-machine folder
+nano .env
 
 NODE_PORT=5001
 
 REACT_APP_API_BASE_URL=http://localhost:5000
+
 
 
 
